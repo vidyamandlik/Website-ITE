@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hotel.css">
+    <title>Non Veg Menu</title>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav-list">
+        
+        <li><a href="hotel.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+       
+        <li class="drop">
+            <input type="checkbox" id="menu-toggle-1">
+      <label for="menu-toggle-1" class="dropbtn">Menu ▾</label>
+
+            <ul class="dropdown">
+                <li><a href="veg.html">Veg Dishes</a></li>
+                <li><a href="nonveg.html">Non-Veg Dishes</a></li>
+                <li><a href="Snacks and soft drinks.html">Snacks & Soft Drinks</a></li>
+            </ul>
+        </li>
+
+      <li><a href="service.html">Services</a></li>
+      <li class="cart-icon">
+          <a href="cart.html">
+          <span class="cart-emoji">🛒</span>
+         <span id="cart-count">0</span>
+           </a>
+       </li>
+
+    </ul>
+</nav>
+<div class="cart-box" style="display:none;">
+    <ul id="cart-items"></ul>
+</div>
+
+
+
+<h1 class="title">Non-Veg Menu Card</h1>
+
+<section class="menu-section">
+    <h2>Appetizers</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chicken65.jpg">
+            <h3>Chicken 65</h3>
+            <p>Spicy crispy chicken tossed with curry leaves.</p>
+            <span class="price">₹220</span>
+            <button class="add-cart" data-name="Chicken 65" data-price="220">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenlollipop.jpg">
+            <h3>Chicken Lollipop</h3>
+            <p>Fried chicken wings coated with hot sauce.</p>
+            <span class="price">₹240</span>
+               <button class="add-cart" data-name="Chicken Lollipop" data-price="240">
+                 Add to Cart
+              </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickencrispy.jpg">
+            <h3>Chicken Crispy</h3>
+            <p>Crunchy chicken pieces tossed in spicy sauce.</p>
+            <span class="price">₹200</span>
+           <button class="add-cart" data-name="Chicken Crispy" data-price="200">
+               Add to Cart
+           </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\fishfry.jpg">
+            <h3>Fish Fry</h3>
+            <p>Marinated fish shallow fried till crispy.</p>
+            <span class="price">₹260</span>
+            <button class="add-cart" data-name="Fish Fry" data-price="260">
+              Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+</section>
+<section class="menu-section">
+    <h2>Main Course</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\butterchickenmasala.jpg">
+            <h3>Butter Chicken Masala</h3>
+            <p>Chicken cooked in creamy tomato gravy.</p>
+            <span class="price">₹280</span>
+           <button class="add-cart" data-name="Butter Chicken Masala" data-price="280">
+             Add to Cart
+          </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\muttoncurry.jpg">
+            <h3>Mutton Curry</h3>
+            <p>Traditional slow-cooked spicy mutton gravy.</p>
+            <span class="price">₹350</span>
+            <button class="add-cart" data-name="Mutton Curry" data-price="350">
+               Add to Cart
+           </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\eggcurry.jpg">
+            <h3>Egg Curry</h3>
+            <p>Boiled eggs cooked in rich onion tomato gravy.</p>
+            <span class="price">₹160</span>
+            <button class="add-cart" data-name="Egg Curry" data-price="160">
+               Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenbiryani.jpg">
+            <h3>Chicken Biryani</h3>
+            <p>Fragrant rice cooked with marinated chicken.</p>
+            <span class="price">₹300</span>
+            <button class="add-cart" data-name="Chicken Biryani" data-price="300">
+              Add to Cart
+           </button>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="menu-section">
+    <h2>Chinese</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenhakkanoodles.jpg">
+            <h3>Chicken Hakka Noodles</h3>
+            <p>Stir-fried noodles with shredded chicken.</p>
+            <span class="price">₹200</span>
+            <button class="add-cart" data-name="Chicken Hakka Noodles" data-price="200">
+                Add to Cart
+           </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenfriedrice.jpg">
+            <h3>Chicken Fried Rice</h3>
+            <p>Flavourful fried rice with chicken pieces.</p>
+            <span class="price">₹190</span>
+            <button class="add-cart" data-name="Chicken Fried Rice" data-price="190">
+              Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenchilli.jpg">
+            <h3>Chicken Chilli</h3>
+            <p>Deep fried chicken tossed in hot chilli sauce.</p>
+            <span class="price">₹220</span>
+            <button class="add-cart" data-name="Chicken Chilli" data-price="220">
+              Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chickenszechuan.jpg">
+            <h3>Chicken Schezwan</h3>
+            <p>Spicy chicken cooked in Schezwan sauce.</p>
+            <span class="price">₹230</span>
+             <button class="add-cart" data-name="Chicken Schezwan" data-price="230">
+                 Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
+<script>
+    let cart = [];
+
+    // ------------ Load Cart from localStorage on page load ----------
+    if (localStorage.getItem("cartData")) 
+    {
+        cart = JSON.parse(localStorage.getItem("cartData"));
+    }
+
+    const cartItems = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
+
+    function updateCart() 
+   {
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => 
+     {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - ₹${item.price}`;
+        cartItems.appendChild(li);
+    });
+
+    cartCount.textContent = cart.length;   // ⭐ UPDATE COUNTER HERE
+
+    localStorage.setItem("cartData", JSON.stringify(cart));
+}
+
+
+    updateCart(); // ⬅ Load saved items into UI
+
+    // ---------------- Add to Cart Buttons ----------------
+    const buttons = document.querySelectorAll(".add-cart");
+
+    buttons.forEach(btn =>
+    {
+        btn.addEventListener("click", function() {
+            const name = this.getAttribute("data-name");
+            const price = this.getAttribute("data-price");
+
+            cart.push({ name, price });
+
+            updateCart(); // refresh cart + save to localStorage
+        });
+    });
+</script>

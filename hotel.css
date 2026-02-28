@@ -1,0 +1,398 @@
+  .home 
+{
+  background-image: url('BG.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100px;
+  width:100;
+  margin: 0;
+  padding: 0;
+}
+  .about
+{
+  background-image: url('aboutusbg.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100px;
+  margin: 0;
+  padding: 0
+}
+  .navbar 
+{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background: #00c04b;
+  background-blend-mode: darken;
+  background-size: cover;
+  color: white;
+  padding: 0px 30px;
+}
+  .nav-list 
+{
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+}
+  .nav-list li 
+{
+  margin-right: 40px;
+  position: relative;
+}
+  .nav-list li:last-child 
+{
+  margin-right: 0;
+}
+  .nav-list li a 
+{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+  .nav-list li a:hover 
+{
+  color: yellow;
+}
+   a, .dropbtn 
+{
+  color: white;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+   a:hover 
+{
+  background: yellow;
+}
+  .dropbtn:hovar
+{
+  background: none;
+}
+
+  .drop input[type="checkbox"]:checked + label + .dropdown
+{
+  display: block;
+}
+  input[type="checkbox"] 
+{
+  display: none;
+}
+   .dropdown
+{
+    display: none;
+    position: absolute;
+    background: #29AB87;
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    left: 50%;
+    top: 100%;
+    border-radius: 6px;
+    min-width: 100px;
+    transform: translateX(-50%);
+    text-align: left;
+    z-index: 9999;
+}
+   .dropdown li a
+{
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  
+}
+   .drop:hover .dropdown
+{
+   display: block;
+   position: absolute;
+}
+  .dropdown li a
+{
+   background: #29AB87;
+   white-space: nowrap;
+   margin-left: 0;
+}
+  .contact-section
+{
+    background: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 90px;
+    border-top: 2px solid #ddd;
+}
+
+  .contact-section h2 
+{
+    margin-bottom: 10px;
+}
+
+  .contact-section p
+{
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+  .para
+{
+  margin-left: 60px;
+  margin-top: 100px;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: times new roman;
+  color: yellow;
+}
+  .text
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+  .aboutus
+{
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 30px;
+  color: white;
+}
+  .abus
+{
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 550px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  line-height: 30px;
+  color: white;
+}
+  .imageus
+{
+  height: 500px;
+  width: 400px; 
+}
+  .special
+{
+   font-size: 60px;
+   font-weight: bold;
+   margin-left: 50px;
+   margin-top: -50px;
+   color: white;
+  
+}
+  .ourspecial
+{
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 550px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  line-height:30px;
+  color: white;
+}
+ 
+   *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: times new roman;
+}
+
+   body
+{
+    background: #fffdf5;
+    padding: 20px;
+}
+
+  .title
+{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+  .menu-section
+{
+    margin-bottom: 40px;
+}
+
+  .menu-section h2
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+  .card-container
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+  .card
+{
+    width: 260px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+  .card:hover
+{
+    transform: scale(1.05);
+}
+
+  .card img
+{
+    width: 100%;
+    height: 150px;
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+
+  .card h3
+{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+  .card p
+{
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+  .price
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+   
+  .add-cart
+{
+    padding: 6px 12px;
+    background: #ff8800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+}
+  .add-cart:hover 
+{
+    background: #ff6600;
+}
+  .cart-icon 
+{
+    margin-left: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+  .cart-icon a 
+{
+    color: yellow;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+  #cart-count 
+{
+    background: white;
+    color: blue;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 4px;
+}
+  .cart-emoji 
+{
+    color: black;  
+    font-size: 22px;
+}
+  .service-form 
+{
+    padding: 6px 12px;
+    background: #ff8800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+}
+   .service-form:hover 
+{
+    background: #ff6600;
+}
+
+  .popup-form 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+  .form-box 
+{
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  .form-box input 
+{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+  .submit-btn 
+{
+    background: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+  .close-btn 
+{
+    background: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+
+
+ 
+  
+   
+
+  

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hotel.css">
+    <title>Veg Menu</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="nav-list">
+        
+        <li><a href="hotel.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+       
+        <li class="drop">
+            <input type="checkbox" id="menu-toggle-1">
+      <label for="menu-toggle-1" class="dropbtn">Menu ▾</label>
+
+            <ul class="dropdown">
+                <li><a href="veg.html">Veg Dishes</a></li>
+                <li><a href="nonveg.html">Non-Veg Dishes</a></li>
+                <li><a href="Snacks and soft drinks.html">Snacks & Soft Drinks</a></li>
+            </ul>
+        </li>
+
+      <li><a href="service.html">Services</a></li>
+      <li class="cart-icon">
+        <a href="cart.html">
+           <span class="cart-emoji">🛒</span>
+         <span id="cart-count">0</span>
+         </a>
+       </li>
+
+    </ul>
+</nav>
+<div class="cart-box" style="display:none;">
+    <ul id="cart-items"></ul>
+</div>
+
+<h1 class="title"> Veg Menu Card</h1>
+<section class="menu-section">
+    <h2>Appetizers</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\vegmanchurian.jpg">
+            <h3>Veg Manchurian (Dry)</h3>
+            <p>Spicy fried vegetable balls tossed in sauce.</p>
+            <span class="price">₹180</span>
+         <button class="add-cart" data-name="Veg Manchurian" data-price="180">
+              Add to Cart
+         </button>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\paneertikka.jpg">
+            <h3>Paneer Tikka</h3>
+            <p>Marinated cottage cheese grilled to perfection.</p>
+            <span class="price">₹220</span>
+          <button class="add-cart" data-name="Paneer Tikka" data-price="220">
+               Add to Cart
+          </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\cheesecornballs.jpg">
+            <h3>Cheese Corn Balls</h3>
+            <p>Cheesy corn filled crispy balls.</p>
+            <span class="price">₹160</span>
+          <button class="add-cart" data-name="Cheese corn Balls" data-price="160">
+              Add to Cart
+          </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\vegspringroll.jpg">
+            <h3>Veg Spring Roll</h3>
+            <p>Crispy rolls stuffed with seasoned veggies.</p>
+            <span class="price">₹140</span>
+          <button class="add-cart" data-name="Veg Spring Roll" data-price="140">
+           Add to Cart
+         </button>
+
+        </div>
+    </div>
+</section>
+<section class="menu-section">
+    <h2> Main Course</h2>
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\paneerbuttermasala.jpg">
+            <h3>Paneer Butter Masala</h3>
+            <p>Creamy tomato gravy with soft paneer cubes.</p>
+            <span class="price">₹260</span>
+           <button class="add-cart" data-name="Paneer Butter Masala" data-price="260">
+                 Add to Cart
+           </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\veghandi.jpg">
+            <h3>Veg Handi</h3>
+            <p>Mixed veggies cooked in rich handi masala.</p>
+            <span class="price">₹240</span>
+            <button class="add-cart" data-name="Veg Handi" data-price="240">
+               Add to Cart
+           </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\kajucurry.jpg">
+            <h3>Kaju Curry</h3>
+            <p>Cashew-rich creamy gravy dish.</p>
+            <span class="price">₹300</span>
+         <button class="add-cart" data-name="Kaju Curry" data-price="300">
+             Add to Cart
+         </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\palakpaneer.jpg">
+            <h3>Palak Paneer</h3>
+            <p>Spinach puree cooked gently with paneer cubes.</p>
+            <span class="price">₹240</span>
+          <button class="add-cart" data-name="Palak Paneer" data-price="240">
+              Add to Cart
+          </button>
+
+        </div>
+    </div>
+</section>
+<section class="menu-section">
+    <h2>Chinese</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\veghakkanoodles.jpg">
+            <h3>Veg Hakka Noodles</h3>
+            <p>Stir-fried noodles with crunchy vegetables.</p>
+            <span class="price">₹160</span>
+          <button class="add-cart" data-name="Veg Hakka Noodles" data-price="160">
+               Add to Cart
+         </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\vegfriedrice.jpg">
+            <h3>Veg Fried Rice</h3>
+            <p>Rice tossed with mixed vegetables.</p>
+            <span class="price">₹150</span>
+            <button class="add-cart" data-name="Veg Fried Rice" data-price="150">
+              Add to Cart
+          </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\paneerchilli.jpg">
+            <h3>Paneer Chilli</h3>
+            <p>Crispy paneer tossed in spicy sauce.</p>
+            <span class="price">₹200</span>
+            <button class="add-cart" data-name="Paneer Chilli" data-price="200">
+              Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\chinesebhel.jpg">
+            <h3>Chinese Bhel</h3>
+            <p>Fried noodles mixed with sauces & veggies.</p>
+            <span class="price">₹130</span>
+          <button class="add-cart" data-name="Chinese Bhel" data-price="130">
+            Add to Cart
+         </button>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<script>
+    let cart = [];
+
+    // ------------ Load Cart from localStorage on page load ----------
+    if (localStorage.getItem("cartData")) 
+    {
+        cart = JSON.parse(localStorage.getItem("cartData"));
+    }
+
+    const cartItems = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
+
+   function updateCart() 
+   {
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => 
+   {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - ₹${item.price}`;
+        cartItems.appendChild(li);
+    });
+
+    cartCount.textContent = cart.length;   // ⭐ UPDATE COUNTER HERE
+
+    localStorage.setItem("cartData", JSON.stringify(cart));
+}
+
+    updateCart(); // ⬅ Load saved items into UI
+
+    // ---------------- Add to Cart Buttons ----------------
+    const buttons = document.querySelectorAll(".add-cart");
+
+    buttons.forEach(btn => 
+      {
+        btn.addEventListener("click", function() {
+            const name = this.getAttribute("data-name");
+            const price = this.getAttribute("data-price");
+
+            cart.push({ name, price });
+
+            updateCart(); // refresh cart + save to localStorage
+        });
+    });
+</script>

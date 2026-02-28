@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hotel.css">
+    <title>Veg Menu</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="nav-list">
+        
+        <li><a href="hotel.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+       
+        <li class="drop">
+            <input type="checkbox" id="menu-toggle-1">
+      <label for="menu-toggle-1" class="dropbtn">Menu ▾</label>
+
+            <ul class="dropdown">
+                <li><a href="veg.html">Veg Dishes</a></li>
+                <li><a href="nonveg.html">Non-Veg Dishes</a></li>
+                <li><a href="Snacks and soft drinks.html">Snacks & Soft Drinks</a></li>
+            </ul>
+        </li>
+
+      <li><a href="service.html">Services</a></li>
+  </li>
+
+    </ul>
+</nav>
+
+<h1 class="title">Our Services</h1>
+<section class="service-section">
+    <div class="card-container">
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\catering.jpg">
+            <h3>Catering</h3>
+            <p>Customised menus and professional service for parties, corporate events and celebrations.</p>
+         <button class="service-form">
+           Catering Form
+       </button>
+        </div>
+    
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\homedelivery.jpg">
+            <h3>Home Delivery</h3>
+          <p>Freshly prepared meals delivered hot to your door with tracking and contactless options.</p>
+         <button class="service-form">
+            Home Delivery Form
+       </button>
+        </div>
+
+         <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\reservation.jpg">
+            <h3>Online Table Reservation</h3>
+          <p>Reserve Your seats for soothy experience.</p>
+         <button class="service-form">
+            Online Reservation Form
+        </button>
+        </div>
+         
+           <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\takeaway.jpg">
+            <h3>Takeaway</h3>
+          <p>High-quality packaging for you and your family</p>
+         <button class="service-form">
+            Takeaway Form
+        </button>
+        </div>
+<div id="catering-popup" class="popup-form">
+    <div class="form-box">
+        <h2>Catering Form</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Event Type:</label>
+        <input type="text" placeholder="Birthday, Wedding, Corporate…">
+
+        <label>Guests Count:</label>
+        <input type="number" placeholder="No. of guests">
+
+        <label>Date:</label>
+        <input type="date">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter mobile number">
+
+        <button class="submit-btn">Submit</button>
+        <button id="close-form" class="close-btn">Close</button>
+    </div>
+</div>
+<div id="delivery-popup" class="popup-form" style="display:none;">
+    <div class="form-box">
+        <h2>Home Delivery Form</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Address:</label>
+        <input type="text" placeholder="Enter full delivery address">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter your mobile number">
+
+        <label>Food Item:</label>
+        <input type="text" placeholder="Item name">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="No. of plates">
+
+        <label>Delivery Time:</label>
+        <input type="time">
+
+        <button class="submit-btn">Submit</button>
+        <button id="close-delivery" class="close-btn">Close</button>
+    </div>
+</div>
+<div id="reservation-popup" class="popup-form" style="display:none;">
+    <div class="form-box">
+        <h2>Table Reservation Form</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter your mobile number">
+
+        <label>No. of Guests:</label>
+        <input type="number" placeholder="Number of people">
+
+        <label>Date:</label>
+        <input type="date">
+
+        <label>Time:</label>
+        <input type="time">
+
+        <label>Special Request:</label>
+        <input type="text" placeholder="Optional">
+
+        <button class="submit-btn">Submit</button>
+        <button id="close-reservation" class="close-btn">Close</button>
+    </div>
+</div>
+<div id="takeaway-popup" class="popup-form" style="display:none;">
+    <div class="form-box">
+        <h2>Takeaway Form</h2>
+
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Enter mobile number">
+
+        <label>Food Item:</label>
+        <input type="text" placeholder="Enter item name">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="No. of plates">
+
+        <label>Pickup Time:</label>
+        <input type="time">
+
+        <button class="submit-btn">Submit</button>
+        <button id="close-takeaway" class="close-btn">Close</button>
+    </div>
+</div>
+
+
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+    // Get the catering button
+    const cateringBtn = document.querySelector(".card:nth-child(1) .service-form");
+
+    // Form popup element
+    const popupForm = document.getElementById("catering-popup");
+    const closeBtn = document.getElementById("close-form");
+
+    // Open popup
+    cateringBtn.addEventListener("click", function () {
+        popupForm.style.display = "flex";
+    });
+
+    // Close popup
+    closeBtn.addEventListener("click", function () {
+        popupForm.style.display = "none";
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ------------------ HOME DELIVERY FORM ------------------ */
+
+    // The Home Delivery button is in the 2nd card
+    const deliveryBtn = document.querySelector(".card:nth-child(2) .service-form");
+
+    // Get popups
+    const deliveryPopup = document.getElementById("delivery-popup");
+    const closeDelivery = document.getElementById("close-delivery");
+
+    // Open popup
+    deliveryBtn.addEventListener("click", function () {
+        deliveryPopup.style.display = "flex";
+    });
+
+    // Close popup
+    closeDelivery.addEventListener("click", function () {
+        deliveryPopup.style.display = "none";
+    });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ------------------ TABLE RESERVATION FORM ------------------ */
+
+    // The Reservation Form button is in the 3rd card
+    const reservationBtn = document.querySelector(".card:nth-child(3) .service-form");
+
+    const reservationPopup = document.getElementById("reservation-popup");
+    const closeReservation = document.getElementById("close-reservation");
+
+    // Open popup
+    reservationBtn.addEventListener("click", function () {
+        reservationPopup.style.display = "flex";
+    });
+
+    // Close popup
+    closeReservation.addEventListener("click", function () {
+        reservationPopup.style.display = "none";
+    });
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ------------------ TAKEAWAY FORM ------------------ */
+
+    // The Takeaway Form button is in the 4th card
+    const takeawayBtn = document.querySelector(".card:nth-child(4) .service-form");
+
+    const takeawayPopup = document.getElementById("takeaway-popup");
+    const closeTakeaway = document.getElementById("close-takeaway");
+
+    // Open popup
+    takeawayBtn.addEventListener("click", function () {
+        takeawayPopup.style.display = "flex";
+    });
+
+    // Close popup
+    closeTakeaway.addEventListener("click", function () {
+        takeawayPopup.style.display = "none";
+    });
+
+});
+</script>
+
+</body>
+</html>
+
+

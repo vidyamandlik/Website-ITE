@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="hotel.css">
+    <title>Snacks & Soft Drinks Menu</title>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav-list">
+        
+        <li><a href="hotel.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+        <li class="drop">
+            <input type="checkbox" id="menu-toggle-1">
+      <label for="menu-toggle-1" class="dropbtn">Menu ▾</label>
+
+            <ul class="dropdown">
+                <li><a href="veg.html">Veg Dishes</a></li>
+                <li><a href="nonveg.html">Non-Veg Dishes</a></li>
+                <li><a href="Snacks and soft drinks.html">Snacks & Soft Drinks</a></li>
+            </ul>
+        </li>
+
+      <li><a href="service.html">Services</a></li>
+      <li class="cart-icon">
+          <a href="cart.html">
+            <span class="cart-emoji">🛒</span>
+         <span id="cart-count">0</span>
+           </a>
+        </li>
+
+    </ul>
+</nav>
+<div class="cart-box" style="display:none;">
+    <ul id="cart-items"></ul>
+</div>
+
+<h1 class="title">Snacks & Soft Drinks</h1>
+
+<section class="menu-section">
+    <h2>Snacks</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\samosa.jpg">
+            <h3>Samosa</h3>
+            <p>Crispy triangular snack stuffed with spiced potatoes.</p>
+            <span class="price">₹20</span>
+            <button class="add-cart" data-name="Samosa" data-price="20">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\vadapav.jpg">
+            <h3>Vada Pav</h3>
+            <p>Mumbai's famous street snack with spicy chutney.</p>
+            <span class="price">₹25</span>
+           <button class="add-cart" data-name="Vada Pav" data-price="25">
+             Add to Cart
+          </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\paneerpakoda.jpg">
+            <h3>Paneer Pakoda</h3>
+            <p>Paneer slices coated in batter and deep fried.</p>
+            <span class="price">₹60</span>
+            <button class="add-cart" data-name="Paneer Pakoda" data-price="60">
+               Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\maggie.jpg">
+            <h3>Maggie Masala</h3>
+            <p>Hot & spicy masala noodles.</p>
+            <span class="price">₹50</span>
+            <button class="add-cart" data-name="Maggie Masala" data-price="50">
+              Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="menu-section">
+    <h2>Soft Drinks</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\cocacola.jpg">
+            <h3>Coca-Cola</h3>
+            <p>Chilled refreshing cola drink.</p>
+            <span class="price">₹40</span>
+            <button class="add-cart" data-name="Coca-Cola" data-price="40">
+               Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\sprite.jpg">
+            <h3>Sprite</h3>
+            <p>Lemon lime refreshing soft drink.</p>
+            <span class="price">₹40</span>
+            <button class="add-cart" data-name="Sprite" data-price="40">
+              Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\coldcoffee.jpg">
+            <h3>Cold Coffee</h3>
+            <p>Thick creamy cold coffee with ice.</p>
+            <span class="price">₹80</span>
+            <button class="add-cart" data-name="Cold Coffee" data-price="80">
+              Add to Cart
+            </button>
+
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\SAINATH\Desktop\Website ITE\menu photos\sodalime.jpg">
+            <h3>Fresh Lime Soda</h3>
+            <p>Sweet & salt soda with lemon freshness.</p>
+            <span class="price">₹60</span>
+            <button class="add-cart" data-name="Fresh Lime Soda" data-price="60">
+              Add to Cart
+           </button>
+
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
+<script>
+    let cart = [];
+
+    // ------------ Load Cart from localStorage on page load ----------
+    if (localStorage.getItem("cartData"))
+    {
+        cart = JSON.parse(localStorage.getItem("cartData"));
+    }
+
+    const cartItems = document.getElementById("cart-items");
+     const cartCount = document.getElementById("cart-count");
+
+    function updateCart() 
+    {
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - ₹${item.price}`;
+        cartItems.appendChild(li);
+    });
+
+    cartCount.textContent = cart.length;   // ⭐ UPDATE COUNTER HERE
+
+    localStorage.setItem("cartData", JSON.stringify(cart));
+}
+
+
+    updateCart(); // ⬅ Load saved items into UI
+
+    // ---------------- Add to Cart Buttons ----------------
+    const buttons = document.querySelectorAll(".add-cart");
+
+    buttons.forEach(btn => 
+       {
+        btn.addEventListener("click", function() {
+            const name = this.getAttribute("data-name");
+            const price = this.getAttribute("data-price");
+
+            cart.push({ name, price });
+
+            updateCart(); // refresh cart + save to localStorage
+        });
+    });
+</script>
