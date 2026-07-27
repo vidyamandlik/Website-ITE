@@ -17,7 +17,7 @@ The primary objective of this project was to learn the fundamentals of frontend 
 - 🧭 Easy-to-use navigation menu
 - 🎨 Clean and user-friendly interface
 
-- ## 🛠️ Technologies Used
+ ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
@@ -25,3 +25,10 @@ The primary objective of this project was to learn the fundamentals of frontend 
 - Git
 - GitHub
 - GitHub Pages (for deployment)
+
+ ## 👥 Team Members
+
+- Vidya Mandlik
+- Sanjyot Walunj
+- Sameksha Kolge
+- Shreya Dhanwate
