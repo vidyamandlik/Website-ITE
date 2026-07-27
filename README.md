@@ -48,7 +48,7 @@ The primary objective of this project was to learn the fundamentals of frontend 
 ![Non-Veg Menu](assets/screenshots/nonveg.png)
 
 ### 🥤 Snacks & Soft Drinks
-![Snacks & Soft Drinks](assets/screenshots/snacks.png)
+![Snacks & Soft Drinks](assets/screenshots/snacksandsoftdrinks.png)
 
 ### 🛎️ Services
 ![Services](assets/screenshots/services.png)
