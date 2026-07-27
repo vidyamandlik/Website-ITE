@@ -32,3 +32,26 @@ The primary objective of this project was to learn the fundamentals of frontend 
 - Sanjyot Walunj
 - Sameksha Kolge
 - Shreya Dhanwate
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](assets/screenshots/home.png)
+
+### 📖 About Us
+![About Us](assets/screenshots/about.png)
+
+### 🥗 Veg Menu
+![Veg Menu](assets/screenshots/veg.png)
+
+### 🍗 Non-Veg Menu
+![Non-Veg Menu](assets/screenshots/nonveg.png)
+
+### 🥤 Snacks & Soft Drinks
+![Snacks & Soft Drinks](assets/screenshots/snacks.png)
+
+### 🛎️ Services
+![Services](assets/screenshots/services.png)
+
+### 🛒 Shopping Cart
+![Shopping Cart](assets/screenshots/cart.png)
