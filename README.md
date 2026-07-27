@@ -1,12 +1,12 @@
- 🍽️ Restaurant Website
+ # 🍽️ Restaurant Website
 
- 📖 Project Description
+ ## 📖 Project Description
 
 This is a responsive restaurant website developed as a first-year engineering team project using HTML, CSS, and JavaScript. The website showcases different food categories, restaurant services, and a shopping cart interface while providing users with an attractive and easy-to-navigate experience.
 
 The primary objective of this project was to learn the fundamentals of frontend web development, including multi-page website design, responsive layouts, and basic JavaScript interactions.
 
- ✨ Features
+## ✨ Features
 
 - 🏠 Home page with an attractive landing section
 - 🍽️ Separate pages for Veg, Non-Veg, and Snacks & Soft Drinks menus
